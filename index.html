@@ -17,8 +17,8 @@
     <header class="page-header"> 
         <div class="container header-div">
         <nav class="page-nav">
-        <a class="logo link" href="./index.html"> Web <span class="logo-stud">Studio</span> </a>
-        <ul class="nav">
+        <a class="logo link" href="./index.html">Web<span class="logo-stud">Studio</span> </a>
+        <ul class="menu nav">
             <li>
                 <a class="link menu-link home-studio" href="./index.html">Studio</a></li>
             <li>
@@ -27,8 +27,13 @@
                 <a class="link menu-link" href="">Contacts</a></li>
         </ul>
         </nav>
+        <button class="mobile-menu-open-btn" type="button">
+            <svg class="mobile-menu-open-btn-icon" width="24" height="24" aria-label="menu-open-mobile">
+                <use href="./images/icons.svg#menu-mobile-icon"></use>
+            </svg>
+        </button>
         <address>
-        <ul class="addres-list">
+        <ul class="mail-tel addres-list">
             <li>
                 <a class="link mail" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
             <li>
@@ -40,7 +45,7 @@
 
 <!----------MAIN------------->
     <main>
-    <section class="main-page" >
+    <!-- <section class="main-page" >
         <div class="container">
         <h1 class="solution effective-solution">Effective Solutions for Your Business</h1>
        <button class="text-button link-button" type="button">Order Service</button>
@@ -86,9 +91,9 @@
             <p class="text-benefits">Design practice focused on digital experiences. We bring forth a deep passion for problem-solving.</p> </li>
        </ul>
     </div>
-    </section>
+    </section> -->
 
-    <section class="team">
+    <!-- <section class="team">
         <div class="container">
         <h2 class="text-team">Our Team</h2>
     <ul class="team-list">
@@ -256,9 +261,9 @@
         </li>
         </ul>
     </div>
-    </section>
+    </section> -->
 
-    <section class="portfolio">
+    <!-- <section class="portfolio">
         <div class="container">
     <h2 class="text-portfolio">Our Portfolio</h2>
     
@@ -355,10 +360,10 @@
     </li>
 </ul>
 </div>
-    </section>
+    </section> -->
 </main>
 <!----------FOOTER------>
-<footer class="footer">
+<!-- <footer class="footer">
     <div class="container footer-div-container">
         <div class="div-footer-logo">
     <a class="link logo-footer" href="./index.html">Web<span class="studio">Studio</span></a>
@@ -418,10 +423,10 @@
         </form>
     </div>
     </div>
-</footer>
+</footer> -->
 
 <!----------MODALKA------>
-<div class="backdrop is-open">
+<!-- <div class="backdrop">
     <div class="modal">
         <button class="modal-close-btn" type="button">
         <svg class="modal-close-btn-icon" 
@@ -515,6 +520,28 @@
         <button class="text-button link-button" type="submit">Send</button>
         </form>
     </div>
+</div> -->
+
+<!-- /*-------mobile-menu----*/ -->
+
+<div class="mobile-menu-wrapper">
+    <div class="container mobile-menu-container">
+<button class="mobile-menu-close-btn" type="button">
+    <svg class="mobile-menu-close-btn-icon" width="24" height="24">
+        <use href="./images/icons.svg#icon-close"></use>
+    </svg>
+</button>
+<nav class="mobile-menu-navigation">
+    <ul class="mobile-menu">
+        <li class="mobile-menu-item">
+            <a class="mobile-menu-link link" href="">Studio</a></li>
+        <li class="mobile-menu-item">
+            <a class="mobile-menu-link link" href="">Portfolio</a></li>
+        <li class="mobile-menu-item">
+            <a class="mobile-menu-link link" href="">Contacts</a></li>
+    </ul>
+</nav>
+</div>
 </div>
 
 </body>
