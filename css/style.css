@@ -52,8 +52,8 @@ h1, h2, h3, h4, h5, h6, p {
 
 .container{
     max-width: 320px;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 16px;
+    padding-left: 16px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -71,13 +71,24 @@ h1, h2, h3, h4, h5, h6, p {
     line-height: 1.16; /* 116.667% */
     letter-spacing: 0.03em;
     text-transform: uppercase;
-
 }
-
 .page-header{
-    padding-top: 18px;
-    padding-bottom: 18px;
-}
+border-bottom: 1px solid #e7e9fc;
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 
+    0px 1px 1px rgba(46, 47, 66, 0.16),
+     0px 1px 6px rgba(46, 47, 66, 0.08);}
+
+@media screen and (max-width: 767px){
+.page-header{
+    padding-top: 17px;
+    padding-bottom: 17px;
+}}
+
+.header-div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    }
 
 .logo-stud{color:#2E2F42;
     font-family: Raleway;
@@ -94,66 +105,263 @@ h1, h2, h3, h4, h5, h6, p {
     border: none;
     padding: 0;
     line-height: 0;
-    stroke: #2F2F37;
-}
-
-.mobile-menu-wrapper{
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 99999;
-    width: 100%;
-    height: 100%;
-    background-color: #ffffff;
-
-}
-
-
-.header-div{
-display: flex;
-align-items: center;
-justify-content: space-between;
-}
-
-.mobile-menu-container {
-    position: relative;
-
+    fill: #2F2F37;
 }
 
 .mobile-menu-close-btn{
     position: absolute;
-    top: 24;
-    right: 24;
-    background-color: transparent;
-    border: none;
-    padding: 0;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    top: 24px;
+    right: 24px;
+    width: 24px;
+    height: 24px;
+    background-color: #E7E9FC;
     line-height: 0;
-    stroke:#2E2F42;
+    fill:#2E2F42;
+    border-radius: 50%;
 }
 
+.page-nav{
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+}
+
+
+.mobile-menu-wrapper{
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999999;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+
+
+}
+
+.is-open{
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+
+
+
+.mobile-menu-container {
+    display: flex;
+    flex-direction: column;
+    padding-right: 24px;
+    padding-top: 72px;
+    padding-bottom: 40px;
+    position: relative;
+
+}
+
+.mobile-menu-navigation{
+    margin-bottom: auto;
+}
+
+.mobile-menu-item{
+color: #2E2F42;
+font-size: 36px;
+font-weight: 700;
+line-height: 1,11em;
+letter-spacing: 0.02;
+text-transform: capitalize;
+}
+
+.contact-mobile-menu{
+color:#434455;
+font-size: 20px;
+font-style: normal;
+font-weight: 500;
+line-height: 1.2; /* 120% */
+letter-spacing: 0.02em;
+padding-bottom: 48px;
+}
+.mail-menu-mobile{
+    color:#434455;
+    margin-bottom: 24px;
+}
+
+.social-link-menu-mobile{
+    display: flex;
+    justify-content: center;
+    gap: 40px;}
+
+
+    .social-menu-mobile{
+        fill:#F4F4FD;
+        display: flex;
+        width: 40px;
+        height: 40px;
+        background-color: #4d5ae5;
+        border-radius: 50%;
+        justify-content: center;
+        align-items: center;}
+       
+.tel-menu-mobile{
+    margin-bottom: 24px;
+}
 
 
 /*---------header-mobile-end----*/
 
 
-@media screen and (min-width: 768px){
-    .container{
-max-width: 768px;
-} }
+.main-page {
+    background-color: #2E2F42;
+    background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), 
+    rgba(46, 47, 66, 0.7)),
+     url(../images/Dark-bg-mobile.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    max-width: 320px;
+    height: 432px;
+    padding-top: 72px;
+    padding-bottom: 72px;
+    margin-left: auto;
+    margin-right: auto;}
+
+    @media screen and (min-resolution: 192dpi) and (min-width: 320px),
+    screen and(min-resolution: 2dppx) and (min-width: 320px), 
+    screen and(min-device-pixel-ratio: 2) and (min-width: 320px){
+    .main-page {
+    background-color: #2e2f42;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.70),
+    rgba(46, 47, 66, 0.70)), url(/images/Dark-bg-mobile@2x.jpg);
+    }}
+    
+
+
+.effective-solution{
+    color: #FFF;
+text-align: center;
+font-size: 36px;
+font-weight: 700;
+line-height: 1.11; /* 111.111% */
+letter-spacing: 0.02em;
+text-transform: capitalize;
+max-width: 215px;
+margin-right: auto;
+margin-left: auto;
+margin-bottom: 72px;
+}
+.link-button {
+    display: block; 
+        margin-left: auto; 
+        margin-right: auto;
+        background:  #4D5AE5;
+        min-width: 169px; 
+        border: none;
+        font-weight: 500;
+        color: #ffffff;
+        text-align: center;
+        padding: 16px 32px;
+        border-radius: 4px;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+}
+
 /*---------header-tablet-start----*/
 
 
+@media screen and (min-width:768px){
+.header-div {min-height: 72px;}  
+}
+
+@media screen and (min-width:768px){
+.nav{
+    display: flex;
+    gap: 40px;
+    padding: 24px 0;
+}
+
+}
+
+@media screen and (min-width:768px){
+  .addres-list{  
+display: flex;
+    flex-direction: column;
+    }}
+
+    @media screen and (min-width: 768px){
+    .mail {
+    color: #434455;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.16;
+    font-style: normal;
+    letter-spacing: 0.02em;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }}
+
+@media screen and (min-width: 768px){
+.menu-link {
+    
+    color: #2E2F42;
+    line-height: 1.5;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    padding: 24px 0;}}
 
 
+
+
+@media screen and (min-width: 768px){
+    .main-page{
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+    url(/images/Dark-bg-tablet.jpg);
+    height: 436px;
+    padding-top: 112px;
+    padding-bottom: 112px;
+    min-width: 768px;
+     }}
+
+
+
+@media screen and (min-resolution: 192dpi)  and (min-width: 768px),
+screen and(min-resolution: 2dppx)  and (min-width: 768px), 
+screen and(min-device-pixel-ratio: 2)  and (min-width: 768px){
+.main-page{
+min-width: 768px;
+background-image: linear-gradient(
+ rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), 
+url(../images/Dark-bg-tablet@2x.jpg)}}
+
+
+@media screen and (min-width: 768px) {
+    .link-button{transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);}
+    
+}
+@media screen and (min-width: 768px){
+.container {
+max-width: 768px;}}
+
+@media screen and (min-width: 768px){
+.mobile-menu-open-btn {
+    display: none;}}
+
+    @media screen and (min-width: 768px){
+    .effective-solution {
+        font-size: 56px;
+        line-height: 1.07;
+        max-width: 496px;
+        margin-bottom: 36px;}}
 
 /*---------header-tablet-end----*/
 
-@media screen and (min-width: 1158px){
-    .container{
-max-width: 1158px;
-} }
+
 /*---------header-desk-start----*/
 
-
+@media screen and (min-width: 1158px){
+    .container{
+min-width: 1158px;}}
 
 /*---------header-desk-end----*/
