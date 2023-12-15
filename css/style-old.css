@@ -82,7 +82,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 .mail{
     color: #434455;
-   
+    font-size: 16px;
     padding: 24px 0;
     font-weight: 400;
     line-height: 1.5;
@@ -243,10 +243,11 @@ h1, h2, h3, h4, h5, h6, p {
         {width: calc((100% - 72px) / 4);}
 
 
-        .text-benefits{color: #434455;
+        .text-benefits{
+            color: #434455;
             font-size: 16px;
             font-weight: 400;
-            line-height: 1.5; /* 150% */
+            line-height: 1.5;
             letter-spacing: 0.02em;}
 
                 /* <--!--SECTION----------> */
@@ -324,7 +325,8 @@ h1, h2, h3, h4, h5, h6, p {
             padding-top: 120px;
             padding-bottom: 120px;}
 
-        .text-portfolio{color:  #2E2F42;
+        .text-portfolio{
+            color:  #2E2F42;
             text-align: center;
             font-size: 36px;
             font-weight: 700;
